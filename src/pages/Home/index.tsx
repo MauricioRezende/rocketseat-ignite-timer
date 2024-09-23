@@ -10,6 +10,12 @@ import {
   TaskInput,
 } from './styles'
 
+// controlled vs uncontrolled
+// con -> controla cada alteração no input, atualizando estado e renderizando novamente
+// *Pode ter problemas de performance em formulário muito grande
+// uncon -> controla o conteúdo dos inputs após submit do formulário
+// *Mais performático, porém, sem validações em tempo real
+
 export function Home() {
   return (
     <HomeContainer>
